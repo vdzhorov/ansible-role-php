@@ -7,11 +7,11 @@
     mode: 0644
   loop: "{{ websites }}"
   notify: Start php-fpm
-  when: php_fpm_enabled
+  when: php_fpm_enabled|bool
 
 - name: Enable php-fpm
   service:
     name: php-fpm
     enabled: yes
   notify: Start php-fpm
-  when: php_fpm_enabled
+  when: php_fpm_enabled|bool
