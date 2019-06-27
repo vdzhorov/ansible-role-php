@@ -15,4 +15,3 @@ php_packages:
   - '{{ php_version }}fpm'
   - '{{ php_version }}devel'
   - '{{ php_version }}gd'
-
