@@ -1,0 +1,8 @@
+---
+
+- name: Configure php-fpm
+  template:
+    src: "php-fpm.conf.j2"
+    dest: "{{ php_fpm_directory }}/{{ item.domain }}.conf"
+    mode: 0644
+  loop: "{{ websites }}"

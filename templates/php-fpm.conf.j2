@@ -1,0 +1,13 @@
+[{{ item.domain }}]
+listen = {{ php_fpm_socket_location }}/{{ item.domain }}.sock
+listen.owner = {{ item.user }}
+listen.group = {{ php_fpm_listen_group }}
+listen.mode = 0660
+user = {{ item.user }}
+group = {{ item.user }}
+pm = ondemand
+pm.max_children = 300
+pm.start_servers = 5
+pm.min_spare_servers = 5
+pm.max_spare_servers = 20
+chdir = /

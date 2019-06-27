@@ -1,0 +1,7 @@
+---
+
+- include: install-centos.yml
+  when: ansible_distribution == "CentOS"
+
+- include: php-fpm-configure-centos.yml
+  when: ansible_distribution == "CentOS"

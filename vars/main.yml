@@ -1,0 +1,17 @@
+---
+
+php_ver: '70'
+php_modules:
+  - 'tidy'
+  - 'opcache'
+  - 'pdo'
+  - 'soap'
+  - 'xml'
+  - 'xmlrpc'
+  - 'intl'
+  - 'cli'
+  - 'common'
+  - 'mysqlnd'
+  - 'fpm'
+  - 'devel'
+  - 'gd'

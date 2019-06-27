@@ -1,0 +1,5 @@
+---
+
+php_fpm_socket_location: '/var/run/php-fpm'
+php_fpm_listen_group: 'nginx'
+php_fpm_directory: '/etc/php-fpm.d'
