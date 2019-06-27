@@ -1,17 +1,18 @@
 ---
 
-php_ver: '70'
-php_modules:
-  - 'tidy'
-  - 'opcache'
-  - 'pdo'
-  - 'soap'
-  - 'xml'
-  - 'xmlrpc'
-  - 'intl'
-  - 'cli'
-  - 'common'
-  - 'mysqlnd'
-  - 'fpm'
-  - 'devel'
-  - 'gd'
+php_version: 'php70w-'
+php_packages:
+  - '{{ php_version }}tidy'
+  - '{{ php_version }}opcache'
+  - '{{ php_version }}pdo'
+  - '{{ php_version }}soap'
+  - '{{ php_version }}xml'
+  - '{{ php_version }}xmlrpc'
+  - '{{ php_version }}intl'
+  - '{{ php_version }}cli'
+  - '{{ php_version }}common'
+  - '{{ php_version }}mysqlnd'
+  - '{{ php_version }}fpm'
+  - '{{ php_version }}devel'
+  - '{{ php_version }}gd'
+

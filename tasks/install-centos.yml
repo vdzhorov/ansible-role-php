@@ -1,13 +1,5 @@
 ---
 
-- name: Install main PHP version
+- name: Ensure PHP packages are installed
   yum:
-    name: "php{{ php_ver }}w"
-    state: installed
-  loop: "{{ php_modules }}"
-
-- name: Install PHP modules
-  yum:
-    name: "php{{ php_ver }}w-{{ item }}"
-    state: installed
-  loop: "{{ php_modules }}"
+    name: "{{ php_packages }}"
