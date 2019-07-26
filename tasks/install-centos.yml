@@ -3,3 +3,4 @@
 - name: Ensure PHP packages are installed
   yum:
     name: "{{ php_packages }}"
+  notify: Restart php-fpm
