@@ -3,3 +3,21 @@
 php_fpm_socket_location: '/var/run/php-fpm'
 php_fpm_listen_group: 'nginx'
 php_fpm_directory: '/etc/php-fpm.d'
+
+php_fpm_enabled: yes
+
+php_version: 'php70w-'
+php_packages:
+  - '{{ php_version }}tidy'
+  - '{{ php_version }}opcache'
+  - '{{ php_version }}pdo'
+  - '{{ php_version }}soap'
+  - '{{ php_version }}xml'
+  - '{{ php_version }}xmlrpc'
+  - '{{ php_version }}intl'
+  - '{{ php_version }}cli'
+  - '{{ php_version }}common'
+  - '{{ php_version }}mysqlnd'
+  - '{{ php_version }}fpm'
+  - '{{ php_version }}devel'
+  - '{{ php_version }}gd'
