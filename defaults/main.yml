@@ -21,3 +21,9 @@ php_packages:
   - '{{ php_version }}fpm'
   - '{{ php_version }}devel'
   - '{{ php_version }}gd'
+
+php_fpm_pm: ondemand # Can be either ondemand or dynamic
+php_fpm_max_children: 300
+php_fpm_start_servers: 5
+php_fpm_in_spare_servers: 5
+php_fpm_max_spare_servers: 20
